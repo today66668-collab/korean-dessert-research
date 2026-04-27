@@ -1,0 +1,11 @@
+*.json
+*_reviews_clean.csv
+seoul.py
+shop.py
+review.py
+translate.py
+chart_06_summary.png
+韓式甜點選品報告.docx
+韓式傳統甜點市場可行性研究.pdf
+__pycache__/
+.DS_Store
