@@ -10,7 +10,7 @@ can succeed as a specialty dessert shop in Seoul.
 
 ### Research Scope｜研究範圍
 - Seoul: 50 benchmark Korean dessert shops (menu & review analysis)
-- Overseas: 750 consumer reviews across Taipei, Tokyo, Vancouver
+- Overseas: 850 consumer reviews across Taipei, Tokyo, Vancouver
 - Tools: Python · Apify · pandas · matplotlib · seaborn
 
 ### Key Finding｜核心發現
@@ -23,7 +23,6 @@ and 개성주악 naturally satisfies all three through its ingredients.
 |------|------|
 | `korean_dessert_analysis.ipynb` | 主要分析 Notebook（含圖表） |
 | `korean_dessert_analysis.py` | 三城市跨店關鍵字分析程式 |
-| `portfolio_notion_final.md` | 作品集完整文字（中英雙語） |
 | `chart_01~05.png` | 視覺化圖表 |
 
 ### Methodology Note｜方法論說明
