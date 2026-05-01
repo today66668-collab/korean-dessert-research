@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5dcd3ecbb16506e5f04a7a499ced93b6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5dcd3ecbb16506e5f04a7a499ced93b6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5dcd3ecbb16506e5f04a7a499ced93b6 = L.map(
+                "map_5dcd3ecbb16506e5f04a7a499ced93b6",
+                {
+                    center: [37.555, 126.977],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aa6b3556f9950789a756c2a7b98049b4 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_aa6b3556f9950789a756c2a7b98049b4.addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            var circle_marker_6b34eaa632ecfa68b02147c8e18ebd35 = L.circleMarker(
+                [37.497808, 126.9965621],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.006, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_d7be85014dc1ba2bb1c08cfb6ac17bad = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_83757c3ddb2e23a6f1f78071ff13238c = $(`<div id="html_83757c3ddb2e23a6f1f78071ff13238c" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">바나리</b><br>         <span style="color:#888"></span><br><hr style="margin:4px 0">         <b>구：</b>서초구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>3 건<br>         <b>평점：</b>★2.75<br>         <b>개성주악：</b>❓ 미확인<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 서초구 사평대로18길 38 2층</span>     </div>     </div>`)[0];
+                popup_d7be85014dc1ba2bb1c08cfb6ac17bad.setContent(html_83757c3ddb2e23a6f1f78071ff13238c);
+            
+        
+
+        circle_marker_6b34eaa632ecfa68b02147c8e18ebd35.bindPopup(popup_d7be85014dc1ba2bb1c08cfb6ac17bad)
+        ;
+
+        
+    
+    
+            circle_marker_6b34eaa632ecfa68b02147c8e18ebd35.bindTooltip(
+                `<div>
+                     바나리 | 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb580685c790d3cfe7c4b0555f28f99d = L.circleMarker(
+                [37.4959888, 127.0410644],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.24, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_8dff3e22c326396922c856ade4bb989c = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_960e51949757691ef303c01f2fb7e50a = $(`<div id="html_960e51949757691ef303c01f2fb7e50a" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">래쉬</b><br>         <span style="color:#888">Lash</span><br><hr style="margin:4px 0">         <b>구：</b>강남구<br>         <b>경쟁：</b><span style="color:#E74C3C">🔴 강함 強</span><br>         <b>리뷰：</b>120 건<br>         <b>평점：</b>★4.29<br>         <b>개성주악：</b>❓ 미확인<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 강남구 논현로72길 19</span>     </div>     </div>`)[0];
+                popup_8dff3e22c326396922c856ade4bb989c.setContent(html_960e51949757691ef303c01f2fb7e50a);
+            
+        
+
+        circle_marker_bb580685c790d3cfe7c4b0555f28f99d.bindPopup(popup_8dff3e22c326396922c856ade4bb989c)
+        ;
+
+        
+    
+    
+            circle_marker_bb580685c790d3cfe7c4b0555f28f99d.bindTooltip(
+                `<div>
+                     래쉬 | Lash
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95c491393613a339d209da2843fd3dda = L.circleMarker(
+                [37.5029176, 127.0271788],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_cdc3aa968293858d77d4ed1913afc7c8 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_d9d9616e4d01a6b025ae74d00b90922f = $(`<div id="html_d9d9616e4d01a6b025ae74d00b90922f" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">한과와락</b><br>         <span style="color:#888">韓果與樂</span><br><hr style="margin:4px 0">         <b>구：</b>강남구<br>         <b>경쟁：</b><span style="color:#E74C3C">🔴 강함 強</span><br>         <b>리뷰：</b>5,679 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 강남구 봉은사로4길 31-5</span>     </div>     </div>`)[0];
+                popup_cdc3aa968293858d77d4ed1913afc7c8.setContent(html_d9d9616e4d01a6b025ae74d00b90922f);
+            
+        
+
+        circle_marker_95c491393613a339d209da2843fd3dda.bindPopup(popup_cdc3aa968293858d77d4ed1913afc7c8)
+        ;
+
+        
+    
+    
+            circle_marker_95c491393613a339d209da2843fd3dda.bindTooltip(
+                `<div>
+                     한과와락 | 韓果與樂
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad74878c8aa411b40e54e78db4f6966a = L.circleMarker(
+                [37.5740559, 126.9916166],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.978, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_b27c8fadedb0f3b73b001a9234229d9a = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_cfd62aae27402edcb092ebc66e66f346 = $(`<div id="html_cfd62aae27402edcb092ebc66e66f346" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">쭈악쭈악 서순라길</b><br>         <span style="color:#888">주악주악西巡羅街</span><br><hr style="margin:4px 0">         <b>구：</b>종로구<br>         <b>경쟁：</b><span style="color:#E67E22">🟡 보통 中</span><br>         <b>리뷰：</b>989 건<br>                  <b>개성주악：</b>❓ 미확인<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 종로구 율곡로10길 77 쭈악쭈악</span>     </div>     </div>`)[0];
+                popup_b27c8fadedb0f3b73b001a9234229d9a.setContent(html_cfd62aae27402edcb092ebc66e66f346);
+            
+        
+
+        circle_marker_ad74878c8aa411b40e54e78db4f6966a.bindPopup(popup_b27c8fadedb0f3b73b001a9234229d9a)
+        ;
+
+        
+    
+    
+            circle_marker_ad74878c8aa411b40e54e78db4f6966a.bindTooltip(
+                `<div>
+                     쭈악쭈악 서순라길 | 주악주악西巡羅街
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dd3352aacadc537216f8a0e84813cdf6 = L.circleMarker(
+                [37.5460594, 126.912792],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.744, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_c4d54855cd8714904dd575dfbf8cb735 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_af2af08ae4be26407369c5919c62574e = $(`<div id="html_af2af08ae4be26407369c5919c62574e" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">명과정 합정점</b><br>         <span style="color:#888">名果亭合井店</span><br><hr style="margin:4px 0">         <b>구：</b>마포구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>372 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 마포구 성지길 57 1층 101호</span>     </div>     </div>`)[0];
+                popup_c4d54855cd8714904dd575dfbf8cb735.setContent(html_af2af08ae4be26407369c5919c62574e);
+            
+        
+
+        circle_marker_dd3352aacadc537216f8a0e84813cdf6.bindPopup(popup_c4d54855cd8714904dd575dfbf8cb735)
+        ;
+
+        
+    
+    
+            circle_marker_dd3352aacadc537216f8a0e84813cdf6.bindTooltip(
+                `<div>
+                     명과정 합정점 | 名果亭合井店
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e8e87804f9ffd6355af51b0046c3acf = L.circleMarker(
+                [37.5070101, 127.1051574],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.426, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_4e21476b0053e93c61362a17fd2705af = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_b281e469b6c8e699be932037bf04e9d4 = $(`<div id="html_b281e469b6c8e699be932037bf04e9d4" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">묘방</b><br>         <span style="color:#888">妙房</span><br><hr style="margin:4px 0">         <b>구：</b>송파구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>213 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 송파구 송파대로 455</span>     </div>     </div>`)[0];
+                popup_4e21476b0053e93c61362a17fd2705af.setContent(html_b281e469b6c8e699be932037bf04e9d4);
+            
+        
+
+        circle_marker_3e8e87804f9ffd6355af51b0046c3acf.bindPopup(popup_4e21476b0053e93c61362a17fd2705af)
+        ;
+
+        
+    
+    
+            circle_marker_3e8e87804f9ffd6355af51b0046c3acf.bindTooltip(
+                `<div>
+                     묘방 | 妙房
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_102c39ef65359dac2003a625e4421fde = L.circleMarker(
+                [37.4824658, 126.9053546],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.344, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_9ef94a2614477ef588828aa9e59ea3a8 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_dd150f7bf03bf3214876dceeb28059ca = $(`<div id="html_dd150f7bf03bf3214876dceeb28059ca" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">서울버터샌드</b><br>         <span style="color:#888">首爾奶油三明治</span><br><hr style="margin:4px 0">         <b>구：</b>관악구<br>         <b>경쟁：</b><span style="color:#E67E22">🟡 보통 中</span><br>         <b>리뷰：</b>672 건<br>         <b>평점：</b>★4.91<br>         <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 관악구 조원로10길 28 101호 서울버터샌드</span>     </div>     </div>`)[0];
+                popup_9ef94a2614477ef588828aa9e59ea3a8.setContent(html_dd150f7bf03bf3214876dceeb28059ca);
+            
+        
+
+        circle_marker_102c39ef65359dac2003a625e4421fde.bindPopup(popup_9ef94a2614477ef588828aa9e59ea3a8)
+        ;
+
+        
+    
+    
+            circle_marker_102c39ef65359dac2003a625e4421fde.bindTooltip(
+                `<div>
+                     서울버터샌드 | 首爾奶油三明治
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf197448721b7745ac657f2f5cd1bcf0 = L.circleMarker(
+                [37.5829622, 126.9812999],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.514, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_25fbecb343504e5d61d705fe56a17624 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_20d725adf15834caa561c49a1b82074b = $(`<div id="html_20d725adf15834caa561c49a1b82074b" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">연경당</b><br>         <span style="color:#888">燕慶堂</span><br><hr style="margin:4px 0">         <b>구：</b>종로구<br>         <b>경쟁：</b><span style="color:#E67E22">🟡 보통 中</span><br>         <b>리뷰：</b>1,257 건<br>         <b>평점：</b>★4.98<br>         <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 종로구 팔판길 26 1층 단독</span>     </div>     </div>`)[0];
+                popup_25fbecb343504e5d61d705fe56a17624.setContent(html_20d725adf15834caa561c49a1b82074b);
+            
+        
+
+        circle_marker_cf197448721b7745ac657f2f5cd1bcf0.bindPopup(popup_25fbecb343504e5d61d705fe56a17624)
+        ;
+
+        
+    
+    
+            circle_marker_cf197448721b7745ac657f2f5cd1bcf0.bindTooltip(
+                `<div>
+                     연경당 | 燕慶堂
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_96ef7fee04edee38cadb3939bb9e62a9 = L.circleMarker(
+                [37.5135245, 127.1043843],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.716, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_08960f9e6c20cdf5494ec96f0f8d57a8 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_3dacb40efbaf7f6b80172ba0dbd83587 = $(`<div id="html_3dacb40efbaf7f6b80172ba0dbd83587" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">고호재 롯데월드몰점</b><br>         <span style="color:#888">古好齋樂天世界Mall店</span><br><hr style="margin:4px 0">         <b>구：</b>송파구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>358 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 송파구 올림픽로 300 5층</span>     </div>     </div>`)[0];
+                popup_08960f9e6c20cdf5494ec96f0f8d57a8.setContent(html_3dacb40efbaf7f6b80172ba0dbd83587);
+            
+        
+
+        circle_marker_96ef7fee04edee38cadb3939bb9e62a9.bindPopup(popup_08960f9e6c20cdf5494ec96f0f8d57a8)
+        ;
+
+        
+    
+    
+            circle_marker_96ef7fee04edee38cadb3939bb9e62a9.bindTooltip(
+                `<div>
+                     고호재 롯데월드몰점 | 古好齋樂天世界Mall店
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b6ef157226bf47ae4bb480eb584bb7f = L.circleMarker(
+                [37.5824457, 127.0043657],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.914, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_9283b45335a229754949684180650ddc = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_950760fc4a1c7d1c216ca6928ebc5515 = $(`<div id="html_950760fc4a1c7d1c216ca6928ebc5515" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">오드투디저트</b><br>         <span style="color:#888">Ode to Dessert</span><br><hr style="margin:4px 0">         <b>구：</b>종로구<br>         <b>경쟁：</b><span style="color:#E67E22">🟡 보통 中</span><br>         <b>리뷰：</b>457 건<br>         <b>평점：</b>★4.38<br>         <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 종로구 동숭길 94 2층</span>     </div>     </div>`)[0];
+                popup_9283b45335a229754949684180650ddc.setContent(html_950760fc4a1c7d1c216ca6928ebc5515);
+            
+        
+
+        circle_marker_4b6ef157226bf47ae4bb480eb584bb7f.bindPopup(popup_9283b45335a229754949684180650ddc)
+        ;
+
+        
+    
+    
+            circle_marker_4b6ef157226bf47ae4bb480eb584bb7f.bindTooltip(
+                `<div>
+                     오드투디저트 | Ode to Dessert
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a7ecd2696d16b733e944480c9ed9b83f = L.circleMarker(
+                [37.5738015, 126.9899615],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.692, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_6d4a3fe935130328dd1e1643b28cfec2 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_4aad775556408c6e228853e877326dae = $(`<div id="html_4aad775556408c6e228853e877326dae" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">신라당 익선</b><br>         <span style="color:#888"></span><br><hr style="margin:4px 0">         <b>구：</b>종로구<br>         <b>경쟁：</b><span style="color:#E67E22">🟡 보통 中</span><br>         <b>리뷰：</b>846 건<br>                  <b>개성주악：</b>❓ 미확인<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 종로구 돈화문로11다길 40 1층</span>     </div>     </div>`)[0];
+                popup_6d4a3fe935130328dd1e1643b28cfec2.setContent(html_4aad775556408c6e228853e877326dae);
+            
+        
+
+        circle_marker_a7ecd2696d16b733e944480c9ed9b83f.bindPopup(popup_6d4a3fe935130328dd1e1643b28cfec2)
+        ;
+
+        
+    
+    
+            circle_marker_a7ecd2696d16b733e944480c9ed9b83f.bindTooltip(
+                `<div>
+                     신라당 익선 | 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_935546d4aea2d0a3e87f107a1312e93f = L.circleMarker(
+                [37.580445, 126.971404],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.15, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_ebed63bda42a0c8260ee2afd529379a1 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_80f55e52721dbc40dca8f5d7f98899bd = $(`<div id="html_80f55e52721dbc40dca8f5d7f98899bd" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">소울</b><br>         <span style="color:#888"></span><br><hr style="margin:4px 0">         <b>구：</b>종로구<br>         <b>경쟁：</b><span style="color:#E67E22">🟡 보통 中</span><br>         <b>리뷰：</b>1,075 건<br>                  <b>개성주악：</b>❓ 미확인<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 종로구 자하문로 50 하얀건물 soul</span>     </div>     </div>`)[0];
+                popup_ebed63bda42a0c8260ee2afd529379a1.setContent(html_80f55e52721dbc40dca8f5d7f98899bd);
+            
+        
+
+        circle_marker_935546d4aea2d0a3e87f107a1312e93f.bindPopup(popup_ebed63bda42a0c8260ee2afd529379a1)
+        ;
+
+        
+    
+    
+            circle_marker_935546d4aea2d0a3e87f107a1312e93f.bindTooltip(
+                `<div>
+                     소울 | 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5037d9609f54142456b5026e54d19d7 = L.circleMarker(
+                [37.5614944, 127.0125603],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.288, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_a3833d5840707ba9df5aee4a5e4cc100 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_54636d42f41dd2c7dd9fd2d6eaaa05ce = $(`<div id="html_54636d42f41dd2c7dd9fd2d6eaaa05ce" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">이끼 신당</b><br>         <span style="color:#888">이끼新堂</span><br><hr style="margin:4px 0">         <b>구：</b>중구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>144 건<br>                  <b>개성주악：</b>❓ 미확인<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 중구 다산로29길 30 1층</span>     </div>     </div>`)[0];
+                popup_a3833d5840707ba9df5aee4a5e4cc100.setContent(html_54636d42f41dd2c7dd9fd2d6eaaa05ce);
+            
+        
+
+        circle_marker_f5037d9609f54142456b5026e54d19d7.bindPopup(popup_a3833d5840707ba9df5aee4a5e4cc100)
+        ;
+
+        
+    
+    
+            circle_marker_f5037d9609f54142456b5026e54d19d7.bindTooltip(
+                `<div>
+                     이끼 신당 | 이끼新堂
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db1ef3ffffbaca69d4b040b916124532 = L.circleMarker(
+                [37.5614485, 126.9789786],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.218, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_433be06c1598e0bb6ea3578005cd6e9c = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_37c1f6de3dad0ab79e9fbffdce5f9f92 = $(`<div id="html_37c1f6de3dad0ab79e9fbffdce5f9f92" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">밀과방</b><br>         <span style="color:#888">蜜果房</span><br><hr style="margin:4px 0">         <b>구：</b>중구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>109 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 중구 남대문로 29-2 1층</span>     </div>     </div>`)[0];
+                popup_433be06c1598e0bb6ea3578005cd6e9c.setContent(html_37c1f6de3dad0ab79e9fbffdce5f9f92);
+            
+        
+
+        circle_marker_db1ef3ffffbaca69d4b040b916124532.bindPopup(popup_433be06c1598e0bb6ea3578005cd6e9c)
+        ;
+
+        
+    
+    
+            circle_marker_db1ef3ffffbaca69d4b040b916124532.bindTooltip(
+                `<div>
+                     밀과방 | 蜜果房
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e9b32f69bc00258b1c74c43bb05738d3 = L.circleMarker(
+                [37.5427538, 127.0562415],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.9, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_fe174d0a0ef6522ee1fc19cdb17e6a31 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_f3b0260368f5529692f9690036c3f288 = $(`<div id="html_f3b0260368f5529692f9690036c3f288" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">예빈당 성수본점</b><br>         <span style="color:#888">禮賓堂聖水本店</span><br><hr style="margin:4px 0">         <b>구：</b>성동구<br>         <b>경쟁：</b><span style="color:#E67E22">🟡 보통 中</span><br>         <b>리뷰：</b>1,950 건<br>         <b>평점：</b>★4.47<br>         <b>개성주악：</b>❓ 미확인<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 성동구 성수이로 87 성문빌딩 1층</span>     </div>     </div>`)[0];
+                popup_fe174d0a0ef6522ee1fc19cdb17e6a31.setContent(html_f3b0260368f5529692f9690036c3f288);
+            
+        
+
+        circle_marker_e9b32f69bc00258b1c74c43bb05738d3.bindPopup(popup_fe174d0a0ef6522ee1fc19cdb17e6a31)
+        ;
+
+        
+    
+    
+            circle_marker_e9b32f69bc00258b1c74c43bb05738d3.bindTooltip(
+                `<div>
+                     예빈당 성수본점 | 禮賓堂聖水本店
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_248d6de31a3e5ba1cb4605864243a6ea = L.circleMarker(
+                [37.5314462, 127.0812105],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.1, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_71b4f57320a52cfa2725c79cc00189a9 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_a79fd921cace7309c9b6185286bb5276 = $(`<div id="html_a79fd921cace7309c9b6185286bb5276" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">편</b><br>         <span style="color:#888">篇</span><br><hr style="margin:4px 0">         <b>구：</b>광진구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>50 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 광진구 뚝섬로 646 HS타워 1층</span>     </div>     </div>`)[0];
+                popup_71b4f57320a52cfa2725c79cc00189a9.setContent(html_a79fd921cace7309c9b6185286bb5276);
+            
+        
+
+        circle_marker_248d6de31a3e5ba1cb4605864243a6ea.bindPopup(popup_71b4f57320a52cfa2725c79cc00189a9)
+        ;
+
+        
+    
+    
+            circle_marker_248d6de31a3e5ba1cb4605864243a6ea.bindTooltip(
+                `<div>
+                     편 | 篇
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1a649d5bc3ae21af34a702fbd5eb40b = L.circleMarker(
+                [37.5393284, 127.122658],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.384, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_6b6a9d171a8dedb931133507a0dbc020 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_201a4fd86e0556317d2721a1773f1d25 = $(`<div id="html_201a4fd86e0556317d2721a1773f1d25" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">시에나블루</b><br>         <span style="color:#888">Siena Blue</span><br><hr style="margin:4px 0">         <b>구：</b>강동구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>192 건<br>         <b>평점：</b>★4.4<br>         <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 강동구 천호대로 991 1층 시에나블루 케이크</span>     </div>     </div>`)[0];
+                popup_6b6a9d171a8dedb931133507a0dbc020.setContent(html_201a4fd86e0556317d2721a1773f1d25);
+            
+        
+
+        circle_marker_a1a649d5bc3ae21af34a702fbd5eb40b.bindPopup(popup_6b6a9d171a8dedb931133507a0dbc020)
+        ;
+
+        
+    
+    
+            circle_marker_a1a649d5bc3ae21af34a702fbd5eb40b.bindTooltip(
+                `<div>
+                     시에나블루 | Siena Blue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c893345eece306e83a9d8ee2e816d186 = L.circleMarker(
+                [37.584916, 127.0523792],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.224, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_1636829d49a17bfb8ca2a6926bf22ccd = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_3dc83ff63fee6f11a993b21a638a3576 = $(`<div id="html_3dc83ff63fee6f11a993b21a638a3576" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">연우연</b><br>         <span style="color:#888">緣遇緣</span><br><hr style="margin:4px 0">         <b>구：</b>동대문구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>112 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 동대문구 전농로 235 1층</span>     </div>     </div>`)[0];
+                popup_1636829d49a17bfb8ca2a6926bf22ccd.setContent(html_3dc83ff63fee6f11a993b21a638a3576);
+            
+        
+
+        circle_marker_c893345eece306e83a9d8ee2e816d186.bindPopup(popup_1636829d49a17bfb8ca2a6926bf22ccd)
+        ;
+
+        
+    
+    
+            circle_marker_c893345eece306e83a9d8ee2e816d186.bindTooltip(
+                `<div>
+                     연우연 | 緣遇緣
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_270e524916ccc46ef40e1afc9d55b9b8 = L.circleMarker(
+                [37.5966698, 127.0881726],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.218, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_dd0e354ee85db20e3afc73fee6346665 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_7234ffba9fc47458007f8b1c3c441f60 = $(`<div id="html_7234ffba9fc47458007f8b1c3c441f60" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">경희떡집</b><br>         <span style="color:#888"></span><br><hr style="margin:4px 0">         <b>구：</b>중랑구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>109 건<br>                  <b>개성주악：</b>❓ 미확인<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 중랑구 망우로 322 1층 115호</span>     </div>     </div>`)[0];
+                popup_dd0e354ee85db20e3afc73fee6346665.setContent(html_7234ffba9fc47458007f8b1c3c441f60);
+            
+        
+
+        circle_marker_270e524916ccc46ef40e1afc9d55b9b8.bindPopup(popup_dd0e354ee85db20e3afc73fee6346665)
+        ;
+
+        
+    
+    
+            circle_marker_270e524916ccc46ef40e1afc9d55b9b8.bindTooltip(
+                `<div>
+                     경희떡집 | 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e576c19b1c9264af44ccabfb44935fe7 = L.circleMarker(
+                [37.6760144, 127.0535843],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.04, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_8493ed6e32cab07d36846b951dd92892 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_7a953dc5116e068c7a3c6bf4515e86a0 = $(`<div id="html_7a953dc5116e068c7a3c6bf4515e86a0" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">가밀148</b><br>         <span style="color:#888">가밀148</span><br><hr style="margin:4px 0">         <b>구：</b>노원구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>20 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 노원구 동일로237나길 54 1층 104호</span>     </div>     </div>`)[0];
+                popup_8493ed6e32cab07d36846b951dd92892.setContent(html_7a953dc5116e068c7a3c6bf4515e86a0);
+            
+        
+
+        circle_marker_e576c19b1c9264af44ccabfb44935fe7.bindPopup(popup_8493ed6e32cab07d36846b951dd92892)
+        ;
+
+        
+    
+    
+            circle_marker_e576c19b1c9264af44ccabfb44935fe7.bindTooltip(
+                `<div>
+                     가밀148 | 가밀148
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2626dd510caafaeeb40b229e8b84f420 = L.circleMarker(
+                [37.5703927, 126.9308765],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.264, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_068d13587d7460511f607beb05d76fa0 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_4caa48cfca145e734b2574b488203349 = $(`<div id="html_4caa48cfca145e734b2574b488203349" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">감과당</b><br>         <span style="color:#888">甘果堂</span><br><hr style="margin:4px 0">         <b>구：</b>서대문구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>132 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 서대문구 증가로 24 2층</span>     </div>     </div>`)[0];
+                popup_068d13587d7460511f607beb05d76fa0.setContent(html_4caa48cfca145e734b2574b488203349);
+            
+        
+
+        circle_marker_2626dd510caafaeeb40b229e8b84f420.bindPopup(popup_068d13587d7460511f607beb05d76fa0)
+        ;
+
+        
+    
+    
+            circle_marker_2626dd510caafaeeb40b229e8b84f420.bindTooltip(
+                `<div>
+                     감과당 | 甘果堂
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73ddd61bad8854de39c4d60fd3e30a3e = L.circleMarker(
+                [37.6452175, 126.9269661],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.132, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_9b1c3f4016c38f580ed2d2c861b6093a = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_3d1d1948c501db5974d079de4545dc7d = $(`<div id="html_3d1d1948c501db5974d079de4545dc7d" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">방아꽃</b><br>         <span style="color:#888"></span><br><hr style="margin:4px 0">         <b>구：</b>은평구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>66 건<br>                  <b>개성주악：</b>❓ 미확인<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 은평구 진관4로 48-17 709동 1층 108호</span>     </div>     </div>`)[0];
+                popup_9b1c3f4016c38f580ed2d2c861b6093a.setContent(html_3d1d1948c501db5974d079de4545dc7d);
+            
+        
+
+        circle_marker_73ddd61bad8854de39c4d60fd3e30a3e.bindPopup(popup_9b1c3f4016c38f580ed2d2c861b6093a)
+        ;
+
+        
+    
+    
+            circle_marker_73ddd61bad8854de39c4d60fd3e30a3e.bindTooltip(
+                `<div>
+                     방아꽃 | 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3652e6d796ba27bf82024d797b0af388 = L.circleMarker(
+                [37.5624427, 126.9251582],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.34, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_7110b8200d8974e9aa6f53f9a043d039 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_a034fb909f5b0a41f9c47308e56e0167 = $(`<div id="html_a034fb909f5b0a41f9c47308e56e0167" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">믜요</b><br>         <span style="color:#888">Mwyo</span><br><hr style="margin:4px 0">         <b>구：</b>마포구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>170 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 마포구 동교로 256-10 2층</span>     </div>     </div>`)[0];
+                popup_7110b8200d8974e9aa6f53f9a043d039.setContent(html_a034fb909f5b0a41f9c47308e56e0167);
+            
+        
+
+        circle_marker_3652e6d796ba27bf82024d797b0af388.bindPopup(popup_7110b8200d8974e9aa6f53f9a043d039)
+        ;
+
+        
+    
+    
+            circle_marker_3652e6d796ba27bf82024d797b0af388.bindTooltip(
+                `<div>
+                     믜요 | Mwyo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_06bd49a68f8ad9a3abc1cf60e85b5566 = L.circleMarker(
+                [37.5243709, 126.8723766],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.09, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_3ced8c1a8c2a2d1fdc147cb8f53266a6 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_249a0d1e74f55d69e7cc18dde7be4c23 = $(`<div id="html_249a0d1e74f55d69e7cc18dde7be4c23" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">지선정담</b><br>         <span style="color:#888">知善情談</span><br><hr style="margin:4px 0">         <b>구：</b>양천구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>45 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 양천구 목동동로14길 7 준성빌딩 2층 지선정담</span>     </div>     </div>`)[0];
+                popup_3ced8c1a8c2a2d1fdc147cb8f53266a6.setContent(html_249a0d1e74f55d69e7cc18dde7be4c23);
+            
+        
+
+        circle_marker_06bd49a68f8ad9a3abc1cf60e85b5566.bindPopup(popup_3ced8c1a8c2a2d1fdc147cb8f53266a6)
+        ;
+
+        
+    
+    
+            circle_marker_06bd49a68f8ad9a3abc1cf60e85b5566.bindTooltip(
+                `<div>
+                     지선정담 | 知善情談
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab27fa2783d8dd987de55df22acb201d = L.circleMarker(
+                [37.4880388, 126.9174834],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.268, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_a11dcc146a94c22b5bd89b0e717c3aae = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_8f187ef9df8d4699dca198805389ef6a = $(`<div id="html_8f187ef9df8d4699dca198805389ef6a" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">쓰임</b><br>         <span style="color:#888">用途</span><br><hr style="margin:4px 0">         <b>구：</b>관악구<br>         <b>경쟁：</b><span style="color:#E67E22">🟡 보통 中</span><br>         <b>리뷰：</b>134 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 관악구 신사로20길 27-3 1층</span>     </div>     </div>`)[0];
+                popup_a11dcc146a94c22b5bd89b0e717c3aae.setContent(html_8f187ef9df8d4699dca198805389ef6a);
+            
+        
+
+        circle_marker_ab27fa2783d8dd987de55df22acb201d.bindPopup(popup_a11dcc146a94c22b5bd89b0e717c3aae)
+        ;
+
+        
+    
+    
+            circle_marker_ab27fa2783d8dd987de55df22acb201d.bindTooltip(
+                `<div>
+                     쓰임 | 用途
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbaf12193982c8382cdc2e3fb71cebb1 = L.circleMarker(
+                [37.4952751, 126.9556539],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.238, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_f30f492a5de57c65c961467ab2d98b04 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_c5ca41a4b342ba2eed8e3633083b0dc9 = $(`<div id="html_c5ca41a4b342ba2eed8e3633083b0dc9" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">이소 다과점</b><br>         <span style="color:#888"></span><br><hr style="margin:4px 0">         <b>구：</b>동작구<br>         <b>경쟁：</b><span style="color:#E67E22">🟡 보통 中</span><br>         <b>리뷰：</b>1,119 건<br>                  <b>개성주악：</b>❓ 미확인<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 동작구 사당로 12 서정힐탑 2층 이소 다과점</span>     </div>     </div>`)[0];
+                popup_f30f492a5de57c65c961467ab2d98b04.setContent(html_c5ca41a4b342ba2eed8e3633083b0dc9);
+            
+        
+
+        circle_marker_bbaf12193982c8382cdc2e3fb71cebb1.bindPopup(popup_f30f492a5de57c65c961467ab2d98b04)
+        ;
+
+        
+    
+    
+            circle_marker_bbaf12193982c8382cdc2e3fb71cebb1.bindTooltip(
+                `<div>
+                     이소 다과점 | 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3bb2fa30d7a33c59b7ffb4173b13448 = L.circleMarker(
+                [37.4962105, 126.9977469],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.324, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_eb81d495e9124ddbee2b171368146063 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_37090ef773f48b5bf16eb9d0ea00aee5 = $(`<div id="html_37090ef773f48b5bf16eb9d0ea00aee5" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">김씨부인</b><br>         <span style="color:#888">金夫人</span><br><hr style="margin:4px 0">         <b>구：</b>서초구<br>         <b>경쟁：</b><span style="color:#27AE60">🟢 약함 弱</span><br>         <b>리뷰：</b>162 건<br>         <b>평점：</b>★3.91<br>         <b>개성주악：</b>❓ 미확인<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 서초구 서래로1길 8 트윈빌 B동 2층</span>     </div>     </div>`)[0];
+                popup_eb81d495e9124ddbee2b171368146063.setContent(html_37090ef773f48b5bf16eb9d0ea00aee5);
+            
+        
+
+        circle_marker_b3bb2fa30d7a33c59b7ffb4173b13448.bindPopup(popup_eb81d495e9124ddbee2b171368146063)
+        ;
+
+        
+    
+    
+            circle_marker_b3bb2fa30d7a33c59b7ffb4173b13448.bindTooltip(
+                `<div>
+                     김씨부인 | 金夫人
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_663cbbec24600e0708029947c6f259ef = L.circleMarker(
+                [37.4998965, 127.0530633],
+                {"bubblingMouseEvents": true, "color": "#E74C3C", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.002, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_18c96705eaae6ce0284292efbbc65845 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_13fc46994f90ea4e146cd8f505143c20 = $(`<div id="html_13fc46994f90ea4e146cd8f505143c20" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">온당디저트</b><br>         <span style="color:#888">溫堂甜點</span><br><hr style="margin:4px 0">         <b>구：</b>강남구<br>         <b>경쟁：</b><span style="color:#E74C3C">🔴 강함 強</span><br>         <b>리뷰：</b>1 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 강남구 역삼로64길 18 1층 101호</span>     </div>     </div>`)[0];
+                popup_18c96705eaae6ce0284292efbbc65845.setContent(html_13fc46994f90ea4e146cd8f505143c20);
+            
+        
+
+        circle_marker_663cbbec24600e0708029947c6f259ef.bindPopup(popup_18c96705eaae6ce0284292efbbc65845)
+        ;
+
+        
+    
+    
+            circle_marker_663cbbec24600e0708029947c6f259ef.bindTooltip(
+                `<div>
+                     온당디저트 | 溫堂甜點
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bafbb137c35cd3357bfc02a72aedc558 = L.circleMarker(
+                [37.5739, 126.9851],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_6ec29bb7f3b9ccec4c3eb681cab6dd89 = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_dc5f70747b174edaecf23168d02dc394 = $(`<div id="html_dc5f70747b174edaecf23168d02dc394" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">담장옆에국화꽃 안녕인사동점</b><br>         <span style="color:#888">牆邊菊花花仁寺洞店</span><br><hr style="margin:4px 0">         <b>구：</b>종로구<br>         <b>경쟁：</b><span style="color:#E67E22">🟡 보통 中</span><br>         <b>리뷰：</b>0 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 종로구 인사동길 49</span>     </div>     </div>`)[0];
+                popup_6ec29bb7f3b9ccec4c3eb681cab6dd89.setContent(html_dc5f70747b174edaecf23168d02dc394);
+            
+        
+
+        circle_marker_bafbb137c35cd3357bfc02a72aedc558.bindPopup(popup_6ec29bb7f3b9ccec4c3eb681cab6dd89)
+        ;
+
+        
+    
+    
+            circle_marker_bafbb137c35cd3357bfc02a72aedc558.bindTooltip(
+                `<div>
+                     담장옆에국화꽃 안녕인사동점 | 牆邊菊花花仁寺洞店
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e43e599f124cdcf43bb38a4a4ba0ea24 = L.circleMarker(
+                [37.5745, 126.993],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+        var popup_28f625ce90c147a52ac1049c501a41dd = L.popup({
+  "maxWidth": 280,
+});
+
+        
+            
+                var html_063cc2986c3baf5a9391b349491bb5de = $(`<div id="html_063cc2986c3baf5a9391b349491bb5de" style="width: 100.0%; height: 100.0%;">     <div style="font-family:Arial; min-width:220px; font-size:12px;">         <b style="font-size:14px">아진당 떡상점</b><br>         <span style="color:#888">雅眞堂年糕店</span><br><hr style="margin:4px 0">         <b>구：</b>종로구<br>         <b>경쟁：</b><span style="color:#E67E22">🟡 보통 中</span><br>         <b>리뷰：</b>0 건<br>                  <b>개성주악：</b>✅ 있음<br>         <hr style="margin:4px 0">         <span style="color:#888; font-size:10px">서울 종로구 돈화문로11길 34-6</span>     </div>     </div>`)[0];
+                popup_28f625ce90c147a52ac1049c501a41dd.setContent(html_063cc2986c3baf5a9391b349491bb5de);
+            
+        
+
+        circle_marker_e43e599f124cdcf43bb38a4a4ba0ea24.bindPopup(popup_28f625ce90c147a52ac1049c501a41dd)
+        ;
+
+        
+    
+    
+            circle_marker_e43e599f124cdcf43bb38a4a4ba0ea24.bindTooltip(
+                `<div>
+                     아진당 떡상점 | 雅眞堂年糕店
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_f209bdfbcfb2b1bbcb895ca75bef1154 = L.circle(
+                [37.5742, 126.986],
+                {"bubblingMouseEvents": true, "color": "#8E44AD", "dashArray": "5 5", "dashOffset": null, "fill": true, "fillColor": "#8E44AD", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 400, "stroke": true, "weight": 2}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            circle_f209bdfbcfb2b1bbcb895ca75bef1154.bindTooltip(
+                `<div>
+                     인사동・익선동 | 仁寺洞・益善洞：傳統文化商圈
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5a4ccf9168509eafb432364004c679ec = L.marker(
+                [37.5742, 126.986],
+                {
+}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            var div_icon_d4bd93706c8e8b5502291082670e0329 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-family: Arial;\n                font-size: 11px;\n                font-weight: bold;\n                color: #8E44AD;\n                background: rgba(255,255,255,0.85);\n                padding: 3px 6px;\n                border-radius: 4px;\n                border: 1px solid #8E44AD;\n                white-space: nowrap;\n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n            \"\u003e\n                \uc778\uc0ac\ub3d9\u30fb\uc775\uc120\ub3d9\u003cbr\u003e\n                \u003cspan style=\"font-size:9px; font-weight:normal; color:#555\"\u003e\u4ec1\u5bfa\u6d1e\u30fb\u76ca\u5584\u6d1e\uff5c\u50b3\u7d71\u6587\u5316\u5546\u5708\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [160, 35],
+  "iconAnchor": [80, 17],
+  "className": "empty",
+});
+        
+    
+                marker_5a4ccf9168509eafb432364004c679ec.setIcon(div_icon_d4bd93706c8e8b5502291082670e0329);
+            
+    
+            var circle_f7aada64fe7181398a2ad6b0785d7591 = L.circle(
+                [37.5563, 126.9236],
+                {"bubblingMouseEvents": true, "color": "#2980B9", "dashArray": "5 5", "dashOffset": null, "fill": true, "fillColor": "#2980B9", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 400, "stroke": true, "weight": 2}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            circle_f7aada64fe7181398a2ad6b0785d7591.bindTooltip(
+                `<div>
+                     홍대・연남동 | 弘大・延南洞：年輕人・夜生活
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7baebe37361b0700dff57e73e9611776 = L.marker(
+                [37.5563, 126.9236],
+                {
+}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            var div_icon_fa499d0988645b8272c5ebdc78992b12 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-family: Arial;\n                font-size: 11px;\n                font-weight: bold;\n                color: #2980B9;\n                background: rgba(255,255,255,0.85);\n                padding: 3px 6px;\n                border-radius: 4px;\n                border: 1px solid #2980B9;\n                white-space: nowrap;\n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n            \"\u003e\n                \ud64d\ub300\u30fb\uc5f0\ub0a8\ub3d9\u003cbr\u003e\n                \u003cspan style=\"font-size:9px; font-weight:normal; color:#555\"\u003e\u5f18\u5927\u30fb\u5ef6\u5357\u6d1e\uff5c\u5e74\u8f15\u4eba\u30fb\u591c\u751f\u6d3b\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [160, 35],
+  "iconAnchor": [80, 17],
+  "className": "empty",
+});
+        
+    
+                marker_7baebe37361b0700dff57e73e9611776.setIcon(div_icon_fa499d0988645b8272c5ebdc78992b12);
+            
+    
+            var circle_2ef6d9ac4af96cb704994fe8d52f4e30 = L.circle(
+                [37.5445, 127.0557],
+                {"bubblingMouseEvents": true, "color": "#27AE60", "dashArray": "5 5", "dashOffset": null, "fill": true, "fillColor": "#27AE60", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 2}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            circle_2ef6d9ac4af96cb704994fe8d52f4e30.bindTooltip(
+                `<div>
+                     성수동 | 聖水洞：新興咖啡街
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d1b9ecd0de2380444d49fa31f0eb6ad6 = L.marker(
+                [37.5445, 127.0557],
+                {
+}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            var div_icon_450e077714247d965eb82005487953b9 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-family: Arial;\n                font-size: 11px;\n                font-weight: bold;\n                color: #27AE60;\n                background: rgba(255,255,255,0.85);\n                padding: 3px 6px;\n                border-radius: 4px;\n                border: 1px solid #27AE60;\n                white-space: nowrap;\n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n            \"\u003e\n                \uc131\uc218\ub3d9\u003cbr\u003e\n                \u003cspan style=\"font-size:9px; font-weight:normal; color:#555\"\u003e\u8056\u6c34\u6d1e\uff5c\u65b0\u8208\u5496\u5561\u8857\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [160, 35],
+  "iconAnchor": [80, 17],
+  "className": "empty",
+});
+        
+    
+                marker_d1b9ecd0de2380444d49fa31f0eb6ad6.setIcon(div_icon_450e077714247d965eb82005487953b9);
+            
+    
+            var circle_0312b4262024c0c7217c697bc2a70b0c = L.circle(
+                [37.5636, 126.9834],
+                {"bubblingMouseEvents": true, "color": "#E67E22", "dashArray": "5 5", "dashOffset": null, "fill": true, "fillColor": "#E67E22", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 2}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            circle_0312b4262024c0c7217c697bc2a70b0c.bindTooltip(
+                `<div>
+                     명동 | 明洞：外國觀光客
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e473f3826693ab67a5baca4657999d0e = L.marker(
+                [37.5636, 126.9834],
+                {
+}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            var div_icon_ee8a97963f8f29f72c2eb3f436ca4b08 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-family: Arial;\n                font-size: 11px;\n                font-weight: bold;\n                color: #E67E22;\n                background: rgba(255,255,255,0.85);\n                padding: 3px 6px;\n                border-radius: 4px;\n                border: 1px solid #E67E22;\n                white-space: nowrap;\n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n            \"\u003e\n                \uba85\ub3d9\u003cbr\u003e\n                \u003cspan style=\"font-size:9px; font-weight:normal; color:#555\"\u003e\u660e\u6d1e\uff5c\u5916\u570b\u89c0\u5149\u5ba2\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [160, 35],
+  "iconAnchor": [80, 17],
+  "className": "empty",
+});
+        
+    
+                marker_e473f3826693ab67a5baca4657999d0e.setIcon(div_icon_ee8a97963f8f29f72c2eb3f436ca4b08);
+            
+    
+            var circle_756e70472cbd56eaea1ede20c85317a9 = L.circle(
+                [37.534, 126.994],
+                {"bubblingMouseEvents": true, "color": "#16A085", "dashArray": "5 5", "dashOffset": null, "fill": true, "fillColor": "#16A085", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 2}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            circle_756e70472cbd56eaea1ede20c85317a9.bindTooltip(
+                `<div>
+                     이태원・한남동 | 梨泰院・漢南洞：外國人・高級
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_640f5a23f69eb8a13c611ff4aa85a798 = L.marker(
+                [37.534, 126.994],
+                {
+}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            var div_icon_09df44dd3c7989811d185e56a2405d89 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-family: Arial;\n                font-size: 11px;\n                font-weight: bold;\n                color: #16A085;\n                background: rgba(255,255,255,0.85);\n                padding: 3px 6px;\n                border-radius: 4px;\n                border: 1px solid #16A085;\n                white-space: nowrap;\n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n            \"\u003e\n                \uc774\ud0dc\uc6d0\u30fb\ud55c\ub0a8\ub3d9\u003cbr\u003e\n                \u003cspan style=\"font-size:9px; font-weight:normal; color:#555\"\u003e\u68a8\u6cf0\u9662\u30fb\u6f22\u5357\u6d1e\uff5c\u5916\u570b\u4eba\u30fb\u9ad8\u7d1a\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [160, 35],
+  "iconAnchor": [80, 17],
+  "className": "empty",
+});
+        
+    
+                marker_640f5a23f69eb8a13c611ff4aa85a798.setIcon(div_icon_09df44dd3c7989811d185e56a2405d89);
+            
+    
+            var circle_f91656ebd0db43ff9f6e4aa119494d2f = L.circle(
+                [37.4979, 127.0276],
+                {"bubblingMouseEvents": true, "color": "#C0392B", "dashArray": "5 5", "dashOffset": null, "fill": true, "fillColor": "#C0392B", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 400, "stroke": true, "weight": 2}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            circle_f91656ebd0db43ff9f6e4aa119494d2f.bindTooltip(
+                `<div>
+                     강남・청담 | 江南・清潭：高端消費
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_975915f6651d555ecc644dbe419b6c06 = L.marker(
+                [37.4979, 127.0276],
+                {
+}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            var div_icon_5b82fd737d7d7f346f02a458ee3a36d0 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-family: Arial;\n                font-size: 11px;\n                font-weight: bold;\n                color: #C0392B;\n                background: rgba(255,255,255,0.85);\n                padding: 3px 6px;\n                border-radius: 4px;\n                border: 1px solid #C0392B;\n                white-space: nowrap;\n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n            \"\u003e\n                \uac15\ub0a8\u30fb\uccad\ub2f4\u003cbr\u003e\n                \u003cspan style=\"font-size:9px; font-weight:normal; color:#555\"\u003e\u6c5f\u5357\u30fb\u6e05\u6f6d\uff5c\u9ad8\u7aef\u6d88\u8cbb\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [160, 35],
+  "iconAnchor": [80, 17],
+  "className": "empty",
+});
+        
+    
+                marker_975915f6651d555ecc644dbe419b6c06.setIcon(div_icon_5b82fd737d7d7f346f02a458ee3a36d0);
+            
+    
+            var circle_2c551c64c31178911e0952140f70d504 = L.circle(
+                [37.5172, 127.103],
+                {"bubblingMouseEvents": true, "color": "#7F8C8D", "dashArray": "5 5", "dashOffset": null, "fill": true, "fillColor": "#7F8C8D", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 300, "stroke": true, "weight": 2}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            circle_2c551c64c31178911e0952140f70d504.bindTooltip(
+                `<div>
+                     잠실 | 蠶室：家庭・大型商場
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6fcaf327628247cdf6ecfe013075990e = L.marker(
+                [37.5172, 127.103],
+                {
+}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            var div_icon_0b529eb01bdad6519f7026936dd10ece = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-family: Arial;\n                font-size: 11px;\n                font-weight: bold;\n                color: #7F8C8D;\n                background: rgba(255,255,255,0.85);\n                padding: 3px 6px;\n                border-radius: 4px;\n                border: 1px solid #7F8C8D;\n                white-space: nowrap;\n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n            \"\u003e\n                \uc7a0\uc2e4\u003cbr\u003e\n                \u003cspan style=\"font-size:9px; font-weight:normal; color:#555\"\u003e\u8836\u5ba4\uff5c\u5bb6\u5ead\u30fb\u5927\u578b\u5546\u5834\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [160, 35],
+  "iconAnchor": [80, 17],
+  "className": "empty",
+});
+        
+    
+                marker_6fcaf327628247cdf6ecfe013075990e.setIcon(div_icon_0b529eb01bdad6519f7026936dd10ece);
+            
+    
+            var circle_6031647ad4628695c2d10e30cc0ca4b2 = L.circle(
+                [37.4784, 126.9516],
+                {"bubblingMouseEvents": true, "color": "#7F8C8D", "dashArray": "5 5", "dashOffset": null, "fill": true, "fillColor": "#7F8C8D", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 250, "stroke": true, "weight": 2}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            circle_6031647ad4628695c2d10e30cc0ca4b2.bindTooltip(
+                `<div>
+                     신림 | 新林：大學生商圈
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eb2d05ca5b12ff10536142931b21d313 = L.marker(
+                [37.4784, 126.9516],
+                {
+}
+            ).addTo(map_5dcd3ecbb16506e5f04a7a499ced93b6);
+        
+    
+            var div_icon_c4e320f05681a80237f4cede9649b778 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-family: Arial;\n                font-size: 11px;\n                font-weight: bold;\n                color: #7F8C8D;\n                background: rgba(255,255,255,0.85);\n                padding: 3px 6px;\n                border-radius: 4px;\n                border: 1px solid #7F8C8D;\n                white-space: nowrap;\n                box-shadow: 1px 1px 3px rgba(0,0,0,0.2);\n            \"\u003e\n                \uc2e0\ub9bc\u003cbr\u003e\n                \u003cspan style=\"font-size:9px; font-weight:normal; color:#555\"\u003e\u65b0\u6797\uff5c\u5927\u5b78\u751f\u5546\u5708\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [160, 35],
+  "iconAnchor": [80, 17],
+  "className": "empty",
+});
+        
+    
+                marker_eb2d05ca5b12ff10536142931b21d313.setIcon(div_icon_c4e320f05681a80237f4cede9649b778);
+            
+</script>
+</html>
