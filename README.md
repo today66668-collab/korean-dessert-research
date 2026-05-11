@@ -9,7 +9,7 @@ can succeed as a specialty dessert shop in Seoul.
 ---
 
 ### Research Scope｜研究範圍
-- Seoul: 50 benchmark Korean dessert shops (menu & review analysis)
+- Seoul: 72 benchmark Korean dessert shops (menu & review analysis)
 - Overseas: 850 consumer reviews across Taipei, Tokyo, Vancouver
 - Tools: Python · Apify · pandas · matplotlib · seaborn
 
